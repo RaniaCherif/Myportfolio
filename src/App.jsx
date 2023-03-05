@@ -1,15 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
+import Profile from './component/Profile';
 import "./App.css";
 function App() {
   return (
-   <BrowserRouter>
+   
     <div className='relative z-0 bg-primary'>
     <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-      <h1>ljjoij</h1>
+      <Profile/>
       </div>
     </div>
-   </BrowserRouter>
+   
   );
 }
 

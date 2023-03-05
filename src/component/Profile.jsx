@@ -1,6 +1,6 @@
-import { motion } from '../utils/motion';
-import { styles } from '../styles';
-import { LapTop } from './canvas/LapTop';
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import LapTop from "./canvas/LapTop";
 
 const Profile = () => {
   return (

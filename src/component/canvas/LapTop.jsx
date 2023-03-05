@@ -49,8 +49,7 @@ function LapTopModel(props) {
             material={materials["matte.001"]}
             geometry={nodes["Cube008_1"].geometry}
           />
-          <mesh geometry={nodes["Cube008_2"].geometry}>
-          </mesh>
+          <mesh geometry={nodes["Cube008_2"].geometry}></mesh>
         </group>
       </group>
       <mesh
@@ -77,20 +76,22 @@ function LapTopModel(props) {
   );
 }
 export default function LapTop() {
-  <Canvas camera={{ position: [-5, -2, -15], fov: 55 }}>
-    <pointLight position={[10, 10, 10]} intensity={1.5} />
-    <Suspense fallback={null}>
-      <group rotation={[0, Math.PI - 0.5, 0]} position={[-1, -1, 0]}>
-        <LapTopModel />
-      </group>
-      <Environment preset="city" />
-    </Suspense>
-    <ContactShadows position={[0, -4.5, 0]} scale={20} blur={2} far={4.5} />
-    <OrbitControls
-      enablePan={false}
-      enableZoom={false}
-      minPolarAngle={Math.PI / 2.2}
-      maxPolarAngle={Math.PI / 2.2}
-    />
-  </Canvas>;
+  return (
+    <Canvas camera={{ position: [-5, -2, -15], fov: 55 }}>
+      <pointLight position={[10, 10, 10]} intensity={1.5} />
+      <Suspense fallback={null}>
+        <group rotation={[0, Math.PI - 0.5, 0]} position={[-1, -1, 0]}>
+          <LapTopModel />
+        </group>
+        <Environment preset="city" />
+      </Suspense>
+      <ContactShadows position={[0, -4.5, 0]} scale={20} blur={2} far={4.5} />
+      <OrbitControls
+        enablePan={false}
+        enableZoom={false}
+        minPolarAngle={Math.PI / 2.2}
+        maxPolarAngle={Math.PI / 2.2}
+      />
+    </Canvas>
+  );
 }
