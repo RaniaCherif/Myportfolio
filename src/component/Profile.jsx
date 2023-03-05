@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import LapTop from "./canvas/LapTop";
+import profile from "../assets/profile.jpg";
 
 const Profile = () => {
   return (
@@ -12,6 +13,10 @@ const Profile = () => {
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
+        <img
+          className="w-[5rem] h-[5rem] object-cover rounded-full"
+          src={profile}
+        />
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
