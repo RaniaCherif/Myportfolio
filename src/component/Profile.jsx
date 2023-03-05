@@ -29,27 +29,27 @@ const Profile = () => {
           </p>
         </div>
 
-        <div className="pl-[20rem]">
+        <div className="relative left-[15rem] top-[2rem] flex flex-col flex-shrink-0 flex-grow-0 h-[6rem] justify-between">
           <p
             id="test"
             className={`${styles.projectDetail}text-white-100 ${styles.marKeur}`}
           >
-            React
+            Real time dashboard stats Data
+          </p>
+          <p
+            className={` ml-10 ${styles.projectDetail} text-white-100 ${styles.marKeur}`}
+          >
+            3D stunning Globe projection visuals
           </p>
           <p
             className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
           >
-            node
+            Reactive interaction and responsivness
           </p>
           <p
-            className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
+            className={` ml-10 ${styles.projectDetail} text-white-100 ${styles.marKeur}`}
           >
-            mongo
-          </p>
-          <p
-            className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
-          >
-            mangoose
+             Backend powered by Nodejs and MongoDB
           </p>
         </div>
       </div>

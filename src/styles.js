@@ -13,7 +13,7 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   projectDetail:
-    "sm:text-[12px] text-[14px] text-secondary uppercase tracking-wider",
+    "sm:text-[10px] text-[14px] text-secondary uppercase tracking-wider",
   marKeur:
     "before:content['1'] before:w-[8px] before:h-[8px] before:rounded-[50%] before:bg-[#915EFF]  before:inline-block before:mr-[8px]",
 };
