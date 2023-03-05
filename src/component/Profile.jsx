@@ -14,7 +14,7 @@ const Profile = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <img
-          className="w-[5rem] h-[5rem] object-cover rounded-full"
+          className="w-[5rem] h-[5rem] object-cover rounded-full absolute left-[2rem] top-[-4rem]"
           src={profile}
         />
 
@@ -28,9 +28,34 @@ const Profile = () => {
             FrontEnd and BackEnd
           </p>
         </div>
-      </div>
 
-      <LapTop />
+        <div className="pl-[20rem]">
+          <p
+            id="test"
+            className={`${styles.projectDetail}text-white-100 ${styles.marKeur}`}
+          >
+            React
+          </p>
+          <p
+            className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
+          >
+            node
+          </p>
+          <p
+            className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
+          >
+            mongo
+          </p>
+          <p
+            className={`${styles.projectDetail} text-white-100 ${styles.marKeur}`}
+          >
+            mangoose
+          </p>
+        </div>
+      </div>
+      <div className="pl-[20rem] absolute w-[70rem] h-[35rem]">
+       <LapTop />
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
