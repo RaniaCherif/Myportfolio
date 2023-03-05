@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { LapTop } from "./canvas";
+import { motion } from '../utils/motion';
+import { styles } from '../styles';
+import { LapTop } from './canvas/LapTop';
 
 const Profile = () => {
   return (
@@ -19,7 +18,8 @@ const Profile = () => {
             Hello, I'm <span className="text-[#915EFF]">Rania Cherif</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop FullsStackJs MERN, WebSite <br className="sm:block hidden" />
+            I develop FullsStackJs MERN, WebSite{" "}
+            <br className="sm:block hidden" />
             FrontEnd and BackEnd
           </p>
         </div>
