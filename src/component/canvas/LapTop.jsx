@@ -2,11 +2,15 @@ import * as THREE from "three";
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
+  Html,
   Environment,
   useGLTF,
   ContactShadows,
   OrbitControls,
 } from "@react-three/drei";
+
+
+import dashboard from "../../assets/dashboard.png";
 
 function LapTopModel(props) {
   const group = useRef();
@@ -50,6 +54,21 @@ function LapTopModel(props) {
             geometry={nodes["Cube008_1"].geometry}
           />
           <mesh geometry={nodes["Cube008_2"].geometry}></mesh>
+          <mesh geometry={nodes["Cube008_2"].geometry}>
+            {/* Drei's HTML component can "hide behind" canvas geometry */}
+            <Html
+              className="content"
+              rotation-x={-Math.PI / 2}
+              position={[0, 0.05, -0.09]}
+              transform
+              occlude
+            >
+              <img
+                className="w-[21rem] h-[14rem] "
+                src={dashboard}
+              ></img>
+            </Html>
+          </mesh>
         </group>
       </group>
       <mesh
