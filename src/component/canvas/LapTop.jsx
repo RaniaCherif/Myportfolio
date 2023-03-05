@@ -64,7 +64,7 @@ function LapTopModel(props) {
               occlude
             >
               <img
-                className="w-[21rem] h-[14rem] "
+                className="w-[21rem] h-[13.7rem] rounded-md"
                 src={dashboard}
               ></img>
             </Html>
