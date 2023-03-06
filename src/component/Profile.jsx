@@ -5,7 +5,7 @@ import profile from "../assets/profile.jpg";
 
 const Profile = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto `}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -19,8 +19,9 @@ const Profile = () => {
         />
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hello, I'm <span className="text-[#915EFF]">Rania Cherif</span>
+          <h1 className={`${styles.heroHeadText} text-white text_shadows`}>
+            Hello,
+            <span className="text-[#915EFF]"> I'm Rania Cherif</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop FullsStackJs MERN, WebSite{" "}
@@ -29,7 +30,7 @@ const Profile = () => {
           </p>
         </div>
 
-        <div className="relative left-[15rem] top-[2rem] flex flex-col flex-shrink-0 flex-grow-0 h-[6rem] justify-between">
+        <div className=" scale-up-center relative left-[12rem] top-[2rem] flex flex-col flex-shrink-0 flex-grow-0 h-[6rem] justify-between hover:animate-spin">
           <p
             id="test"
             className={`${styles.projectDetail}text-white-100 ${styles.marKeur}`}
@@ -49,12 +50,12 @@ const Profile = () => {
           <p
             className={` ml-10 ${styles.projectDetail} text-white-100 ${styles.marKeur}`}
           >
-             Backend powered by Nodejs and MongoDB
+            Backend powered by Nodejs and MongoDB
           </p>
         </div>
       </div>
       <div className="pl-[20rem] absolute w-[70rem] h-[35rem]">
-       <LapTop />
+        <LapTop />
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
