@@ -99,7 +99,7 @@ export default function LapTop() {
     <Canvas  camera={{ position: [-5, -2, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
-        <group rotation={[0, Math.PI - 0.5, 0]} position={[-1, -1, 0]}>
+        <group rotation={[0, Math.PI - 0.5, 0]} position={[-1, 0.7, 0]} scale={1.06}>
           <LapTopModel />
         </group>
         <Environment preset="city" />
