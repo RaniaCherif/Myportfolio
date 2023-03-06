@@ -14,23 +14,27 @@ const Profile = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <img
-          className="w-[5rem] h-[5rem] object-cover rounded-full absolute left-[2rem] top-[-4rem]"
+          className="object-bottom  w-[5rem] h-[5rem] rounded-[50%] absolute left-[2rem] top-[-4rem]"
           src={profile}
         />
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white text_shadows`}>
+          <h1
+            className={`${styles.heroHeadText} text-white text_shadows inline-block`}
+          >
             Hello,
-            <span className="text-[#915EFF]"> I'm Rania Cherif</span>
           </h1>
+          <span className={`${styles.heroSpanText} text-[#915EFF] `}>
+            I'm Rania Cherif
+          </span>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop FullsStackJs MERN, WebSite{" "}
+            I develop FullsStackJs MERN, WebSite
             <br className="sm:block hidden" />
             FrontEnd and BackEnd
           </p>
         </div>
 
-        <div className=" scale-up-center relative left-[12rem] top-[2rem] flex flex-col flex-shrink-0 flex-grow-0 h-[6rem] justify-between hover:animate-spin">
+        <div className=" scale-up-center relative left-[13rem] top-[2rem] flex flex-col flex-shrink-0 flex-grow-0 h-[6rem] justify-between hover:animate-spin scale-up-center">
           <p
             id="test"
             className={`${styles.projectDetail}text-white-100 ${styles.marKeur}`}
