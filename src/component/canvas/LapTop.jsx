@@ -59,7 +59,7 @@ function LapTopModel(props) {
             <Html
               className="content"
               rotation-x={-Math.PI / 2}
-              position={[0, 0.05, -0.09]}
+              position={[-0.27, 0.0387, -0.09]}
               transform
               occlude
             >
