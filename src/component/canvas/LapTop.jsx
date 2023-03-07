@@ -9,13 +9,21 @@ import {
   OrbitControls,
 } from "@react-three/drei";
 
-
 import dashboard from "../../assets/dashboard.png";
+import easing from "easing-utils";
 
 function LapTopModel(props) {
   const group = useRef();
   // Load LapTopModel
   const { nodes, materials } = useGLTF("/mac-draco.glb");
+
+  // Pass in a value from 0 - 1 and get the eased value back
+
+  /*useFrame((state) => {
+    const t = state.clock.getElapsedTime();
+    // group.current.rotation.x = 5*5;
+  });*/
+
   // Make it float
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
@@ -59,7 +67,7 @@ function LapTopModel(props) {
             <Html
               className="content"
               rotation-x={-Math.PI / 2}
-              position={[-0.27, 0.0387, -0.09]}
+              position={[0.0, 0.0387, -0.09]}
               transform
               occlude
             >
@@ -96,10 +104,14 @@ function LapTopModel(props) {
 }
 export default function LapTop() {
   return (
-    <Canvas  camera={{ position: [-5, -2, -15], fov: 55 }}>
+    <Canvas camera={{ position: [-5, -2, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
-        <group rotation={[0, Math.PI - 0.5, 0]} position={[-1, 0.7, 0]} scale={1.06}>
+        <group
+          rotation={[0, Math.PI - 0.5, 0]}
+          position={[-1, 0.7, 0]}
+          scale={1.06}
+        >
           <LapTopModel />
         </group>
         <Environment preset="city" />
